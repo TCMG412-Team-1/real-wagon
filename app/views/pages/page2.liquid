@@ -1,0 +1,29 @@
+---
+title: <center>Page 2 of Team 1's Site</center>
+published: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+    <meta name="keywords" value="{{ site.meta_keywords }}" />
+    <meta name="description" value="{{ site.meta_description }}" />
+    <link rel="stylesheet" href="app.css" media="screen" title="no title">
+  </head>
+  <body >
+  <style>
+    body{      background-color: red
+}
+  </style>
+    <a href="/index.liquid">Welcome Page</a>
+    <a href="/page3.liquid">Page 3</a>
+    <h1>{{ page.title }}</h1>
+    {% block 'main' %}
+    <center>This is for TCMG 412 Project 4 page 2</center>
+    {% endblock %}
+    <center> Page two is always better than page 1</center>
+    <center> It has a red background so that makes it automatically better </center>
+    <center> Hopefully this counts as orginall content </center>
+  </body>
+</html>

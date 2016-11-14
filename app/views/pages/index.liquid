@@ -1,0 +1,29 @@
+---
+title: <center>Welcome to Team 1's Page</center>
+published: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+    <meta name="keywords" value="{{ site.meta_keywords }}" />
+    <meta name="description" value="{{ site.meta_description }}" />
+    <link rel="stylesheet" href="app.css" media="screen" title="no title">
+  </head>
+  <body >
+  <style>
+    body{      background-color: aqua
+}
+  </style>
+    <a href="/page2.liquid">Page 2</a>
+    <a href="/page3.liquid">Page 3</a>
+    <h1>{{ page.title }}</h1>
+    {% block 'main' %}
+    <center>This is for TCMG 412 Project 4</center>
+    {% endblock %}
+    <center> Hopefully this works like its suppose to</center>
+    <center> This is our lame version of orginal content</center>
+    <center> YEAHHHH TEAMWORK! We love working together </center>
+  </body>
+</html>
